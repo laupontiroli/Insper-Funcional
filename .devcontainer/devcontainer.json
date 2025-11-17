@@ -17,6 +17,5 @@
     }
   },
   "forwardPorts": [],
-  "postCreateCommand": "/home/vscode/postCreate.sh",
   "remoteUser": "vscode"
 }
