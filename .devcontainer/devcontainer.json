@@ -1,8 +1,6 @@
 {
     "name": "Haskell DevContainer",
-    "build": {
-        "dockerfile": "Dockerfile"
-    },
+    "image": "fjayres/haskell:latest",
     "customizations": {
         "vscode": {
             "extensions": [
@@ -11,5 +9,5 @@
         }
     },
     "forwardPorts": [],
-    "remoteUser": "vscode"
+    "remoteUser": "insper"
 }
