@@ -22,3 +22,24 @@ let ``makeHello for VIP should return a greeting "Welcome, <name>!"`` () =
     let expected = $"Welcome, {name}!"
     Assert.False(String.IsNullOrWhiteSpace(result))
     Assert.Equal(expected, result)
+
+[<Fact>]
+let ``salute for Morning should return "Good Morning!"`` () =
+    let result = Greet.salute Morning
+    let expected = "Good Morning!"
+    Assert.False(String.IsNullOrWhiteSpace(result))
+    Assert.Equal(expected, result)
+
+[<Fact>]
+let ``salute for Afternoon should return "Good Afternoon!"`` () =
+    let result = Greet.salute Afternoon
+    let expected = "Good Afternoon!"
+    Assert.False(String.IsNullOrWhiteSpace(result))
+    Assert.Equal(expected, result)
+
+[<Fact>]
+let ``salute for Evening should return "Good Evening!"`` () =
+    let result = Greet.salute Evening
+    let expected = "Good Evening!"
+    Assert.False(String.IsNullOrWhiteSpace(result))
+    Assert.Equal(expected, result)
