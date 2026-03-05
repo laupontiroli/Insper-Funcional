@@ -16,3 +16,10 @@ dotnet new classlib --language F# -o Greet
 ```bash
 dotnet solution add Greet
 ```
+
+## Criando um projeto de testes e adicionando na solution
+
+```bash
+dotnet new xunit --language F# -o Greet.Tests
+dotnet solution add Greet.Tests
+```
