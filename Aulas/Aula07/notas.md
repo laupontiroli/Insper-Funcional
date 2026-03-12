@@ -59,3 +59,8 @@ cd Greet.Tests
 dotnet add reference ../Greet
 cd ..
 ```
+
+```bash
+dotnet build
+dotnet test
+```
